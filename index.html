@@ -17,49 +17,56 @@
 <body>
     <div class="container-fluid ">
 
-        
 
+
+
+        <!-- heading -->
+        <div class="row border p-4 mt-4 ">
+            <div class="text-center text-white col-12">
+
+                <h1> Todo App</h1>
+            </div>
+        </div>
 
         <!-- login start -->
         <div class="row border p-4 mt-4 text-white text-center">
+        <!-- Content -->
+        <div class="col-12 ">
+            <h2 class="mb-4 ">Welcome...</h2>
+            <p>Please enter your login credentials to continue.</p>
+            <br>
+            <!-- form start -->
+            <form id="contact-form">
 
-            <!-- Content -->
-            <div class="col-12 ">
-                <h2 class="mb-4 ">Welcome...</h2>
-                <p>Please enter your login credentials to continue.</p>
-                <br>
-                <!-- form start -->
-                <form id="contact-form" >
+                <div class="form-group mb-4">
+                    <input type="text" id="username" class="form-control" placeholder="Username" />
+                </div>
 
-                    <div class="form-group mb-4">
-                        <input type="text" id="username" class="form-control" placeholder="Username" />
-                    </div>
+                <div class="form-group mb-4">
+                    <input type="password" id="password" class="form-control" placeholder="Password" />
+                </div>
 
-                    <div class="form-group mb-4">
-                        <input type="password" id="password" class="form-control" placeholder="Password" />
-                    </div>
+                <div>
+                    <button type="button" class="btn btn-big btn-primary" onclick="lvalidate(redirect)">Login</button>
+                </div>
 
-                    <div>
-                        <button type="button" class="btn btn-big btn-primary" onclick="lvalidate(redirect)" >Login</button>
-                    </div>
+            </form> <!-- form ends -->
+        </div>
 
-                </form> <!-- form ends -->
-            </div>
+    </div> <!--  login ends        -->
 
-        </div> <!--  login ends        -->
+    <!-- footer start -->
+    <footer class="row flex-shrink-0 border text-white mt-4 mb-4">
+        <div class="col-12 text-center ">
+            <small>Copyright @Vaisakh VS</small>
+            <small>|</small>
+            <a href="https://github.com/Vaisakh174"><small>Github</small></a>
+        </div>
+    </footer><!-- footer end -->
 
-        <!-- footer start -->
-        <footer class="row flex-shrink-0 border text-white mt-4 mb-4">
-            <div class="col-12 text-center ">
-                <small>Copyright @Vaisakh VS</small>
-                <small>|</small>
-                <a href="https://github.com/Vaisakh174"><small>Github</small></a>
-            </div>
-        </footer><!-- footer end -->
-
-        <!-- top buttom start -->
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        <!-- top buttom end -->
+    <!-- top buttom start -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- top buttom end -->
 
     </div>
     <!--container ends here -->
