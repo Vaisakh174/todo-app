@@ -79,12 +79,12 @@ nav {
 
 .message{
     position: fixed;
-    right: 25%;
+    right: 30%;
     top:50px;
-    align-items: center;
+    text-align: center;
     background-color: #8400ff;
     padding: 20px;
-    width:50%;
+    width:40%;
     z-index: 1000;
     border-radius: 10px;
     display: none;
