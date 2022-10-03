@@ -17,7 +17,7 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-// top button end
+
 
 
 // login validatiom
@@ -58,6 +58,8 @@ function lvalidate(callback) {
     inputclear()
     return false
   }
+
+
 };
 // validate email and password function end
 
@@ -67,13 +69,11 @@ function redirect(url) {
 }
 // callback end
 
-// clear function
 function inputclear() {
   username.value = "";
   password.value = "";
 }
-
-// fetch json
+// print json
 var xmlhttp = new XMLHttpRequest();
 var url = "https://jsonplaceholder.typicode.com/todos";
 
@@ -87,36 +87,27 @@ xmlhttp.onreadystatechange = function () {
 
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
-// fetch end
 
-// counter using promise
 let count = 0;
 const listenChange = (element) => {
+  count = count + 1;
 
   element.style.pointerEvents = 'none';
   element.style.userSelect = 'none';
   element.parentNode.parentNode.style.textDecoration = 'line-through'
   element.parentNode.parentNode.style.opacity = '0.5'
+  // var new Promise((resolve, reject) => {
 
-  var promis = new Promise((resolve, reject) => {
-    count = count + 1;
-    if (count == 5) {
-      resolve();
-    }
+  // })
+  if (count == 5) {
+    document.querySelector('.message').style.display = "flex"
 
-  });
-
-  promis.then(function () {
-    document.querySelector('.message').style.display = "flex";
     // count = 0;
     setTimeout(() => {
-      document.querySelector('.message').style.display = "none";
-    }, 5000);
-
-  });
+      document.querySelector('.message').style.display = "none"
+    }, 5000)
+  }
 }
-
-// print in html
 function myFunction(arr) {
   var out = "";
   var i;
@@ -161,4 +152,3 @@ function myFunction(arr) {
   }
 
 }
-// print end

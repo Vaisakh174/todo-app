@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-size: cover;
@@ -77,14 +76,14 @@ nav {
 
 
 
-.message{
+.message {
     position: fixed;
     right: 30%;
-    top:50px;
+    top: 50px;
     text-align: center;
     background-color: #8400ff;
     padding: 20px;
-    width:40%;
+    width: 40%;
     z-index: 1000;
     border-radius: 10px;
     display: none;
@@ -93,25 +92,39 @@ nav {
     animation-duration: 0.3s;
 }
 
-@keyframes message{
-    from{opacity: 0;transform: translateX(30px);}
-    to{opacity: 1;transform: translateX(0px);}
+@keyframes message {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
-.close{
+.close {
     animation-name: close;
     animation-duration: 0.3s;
 }
 
-@keyframes close{
-    from{opacity: 1;transform: translateX(0px);}
-    to{opacity: 0;transform: translateX(30px);}
+@keyframes close {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(30px);
+    }
 }
 
 
 
 
-.todos{
+.todos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,17 +132,17 @@ nav {
     gap: 15px;
     width: 100%;
     margin-top: 25px;
-    
+
 }
 
-.todo h4{
+.todo h4 {
     transition: 0.3s;
 }
 
 
-.todo{
+.todo {
     display: flex;
-    
+
     align-items: center;
     background-color: #fff;
     padding: 20px;
@@ -139,19 +152,19 @@ nav {
     gap: 20px;
     position: relative;
     transition: 0.3s;
-    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);
--webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);
--moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
-.todo h3{
+.todo h3 {
     font-size: 20px;
     font-weight: 400;
     user-select: none;
     transition: 0.3s;
 }
 
-.todo h5{
+.todo h5 {
     position: absolute;
     right: 10px;
     width: 30px;
@@ -166,10 +179,10 @@ nav {
     transition: 0.3s;
 }
 
-input{
+input {
     appearance: none;
     -webkit-appearance: none;
-    width:20px;
+    width: 20px;
     height: 20px;
     border-radius: 3px;
     background-color: #e6e6e6;
@@ -181,7 +194,7 @@ input{
     align-items: center;
 }
 
-input::after{
+input::after {
     font-family: "Font Awesome 6 Free";
     content: "\f00c";
     font-weight: 900;
@@ -190,17 +203,15 @@ input::after{
     font-size: 10px;
 }
 
-input:hover{
+input:hover {
     background-color: #c8c8c8;
 }
 
 
-input:checked{
+input:checked {
     background-color: #1500ff;
 }
 
-input:checked:after{
+input:checked:after {
     display: flex;
 }
-
-
